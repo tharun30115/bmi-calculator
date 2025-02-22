@@ -42,3 +42,6 @@ body {
     color: #ffff;
     outline: none;
   }
+  .input-group input::placeholder {
+    color: #e0e0e0;
+  }
