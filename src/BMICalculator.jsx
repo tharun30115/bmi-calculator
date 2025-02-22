@@ -6,6 +6,14 @@ const BMICalculator = () => {
     const [height,setHeight] = useState("")
     const [weight, setWeight] = useState("")
     const [bmi] = useState(null)
+    const [category, setCategory] = useState("")
+
+    const calculateBMI = () => {
+        if(height && weight){
+            const heightInMeters = height / 100
+            const bmi = (weight / (heightInMeters * heightInMeters)).toFixed(2)
+        }
+    }
 
   return (
     <div className='bmi-card'>
