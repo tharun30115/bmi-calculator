@@ -56,3 +56,6 @@ body {
     cursor: pointer;
     transition: background 0.3s ease;
   }
+  .btn-calculator:hover {
+    background: linear-gradient(90deg, #e52e71, #ff8a00);
+  }
