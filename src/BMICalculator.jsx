@@ -5,13 +5,28 @@ const BMICalculator = () => {
 
     const [height,setHeight] = useState("")
     const [weight, setWeight] = useState("")
-    const [bmi] = useState(null)
+    const [bmi, setBMI] = useState(null)
     const [category, setCategory] = useState("")
 
     const calculateBMI = () => {
         if(height && weight){
             const heightInMeters = height / 100
             const bmi = (weight / (heightInMeters * heightInMeters)).toFixed(2)
+            setBMI(bmi)
+
+
+            if(bmi<18.5){
+                setCategory("Underweight")
+            }
+            else if(bmi>= 18.5 && bmi <= 24.9){
+                setCategory("Normal")
+            }
+            else if(bmi >= 25 && bmi <= 29.9){
+                setCategory("Overweight")
+            }
+            else{
+                setCategory("Obese")
+            }
         }
     }
 
