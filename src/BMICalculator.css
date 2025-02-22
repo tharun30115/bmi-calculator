@@ -45,3 +45,14 @@ body {
   .input-group input::placeholder {
     color: #e0e0e0;
   }
+  .btn-calculator {
+    margin-top: 20px;
+    background: linear-gradient(90deg, #ff8a00, #e52e71);
+    color: white;
+    border: none;
+    padding: 15px 20px;
+    border-radius: 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
