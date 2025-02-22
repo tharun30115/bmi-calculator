@@ -66,3 +66,7 @@ body {
     font-size: 1.5rem;
     margin: 10px 0;
   }
+  .result h4 {
+    font-size: 1.2rem;
+    color: #ffd700;
+  }
