@@ -30,7 +30,7 @@ body {
   .input-group label {
     display: block;
     margin-bottom: 5px;
-    color: #f0f0f0;
+    color: #222222;
   }
   .input-group input {
     width: 100%;
@@ -39,11 +39,11 @@ body {
     border-radius: 10px;
     font-size: 1rem;
     background: rgba(255, 255, 255, 0.3);
-    color: #ffff;
+    color: #000000;
     outline: none;
   }
   .input-group input::placeholder {
-    color: #e0e0e0;
+    color: #353535;
   }
   .btn-calculator {
     margin-top: 20px;
@@ -68,5 +68,5 @@ body {
   }
   .result h4 {
     font-size: 1.2rem;
-    color: #ffd700;
+    color: #ffffff;
   }
