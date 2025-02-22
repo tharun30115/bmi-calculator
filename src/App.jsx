@@ -4,9 +4,7 @@ import BMICalculator from './BMICalculator'
 function App() {
 
   return (
-
     <BMICalculator/>
-
   )
 }
 
