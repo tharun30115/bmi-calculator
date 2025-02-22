@@ -1,7 +1,12 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './BMICalculator.css'
 
 const BMICalculator = () => {
+
+    const [height,setHeight] = useState("")
+    const [weight, setWeight] = useState("")
+    const [bmi] = useState(null)
+
   return (
     <div className='bmi-card'>
         <h2>BMI Calculator</h2>
@@ -22,6 +27,15 @@ const BMICalculator = () => {
             placeholder='Enter your height'
             />
         </div>
+        <button className='btn-calculator' onClick={calculateBMI}>Calculate BMI</button>
+        {
+            bmi && (
+                <div className='result'>
+                    <h3>Your BMI: {bmi}</h3>
+                    <h4>Category: {category}</h4>
+                </div>
+            )
+        }
     </div>
   )
 }
